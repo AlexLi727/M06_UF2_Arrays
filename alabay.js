@@ -18,12 +18,21 @@ console.log(llista_bidimensional);
 document.getElementById("llista_bidimensional1").innerHTML = llista_bidimensional[0];
 document.getElementById("llista_bidimensional2").innerHTML = llista_bidimensional[1];
 
+
+
+document.getElementById("MostrarNumeros").addEventListener("click", mostrarResultados);
+
+document.getElementById("Borrar").addEventListener("click", function(){
+    llista_numeros.pop();
+    delete llista_bidimensional[0].pop();
+    delete llista_bidimensional[1].pop();
+    mostrarResultados();
+});
+
+
 function mostrarResultados(){
     document.getElementById("resultats").innerHTML = 
-    llista_numeros.shift() + ` i ` + llista_numeros.pop() + `; `
-    + llista_bidimensional[0].shift() + ` i ` + llista_bidimensional[0].pop() + `; ` 
-    + llista_bidimensional[1].shift() + ` i ` + llista_bidimensional[1].pop();
+    llista_numeros[0] + ` i ` + llista_numeros[llista_numeros.length - 1] + `; `
+    + llista_bidimensional[0][0] + ` i ` + llista_bidimensional[0][llista_bidimensional[0].length - 1] + `; ` 
+    + llista_bidimensional[1][0] + ` i ` + llista_bidimensional[1][llista_bidimensional[1].length -1];
 }
-
-document.getElementById("MostrarNumeros").addEventListener("click", mostrarResultados());
-
