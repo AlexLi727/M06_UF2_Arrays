@@ -1,0 +1,24 @@
+#llista_numeros{
+    display: flex;
+    margin-bottom: 20px;
+}
+#llista_numeros > *{
+    border: 2px solid black;
+    padding: 10px;
+}
+
+#llista_bidimensional1{
+    display: flex;
+}
+#llista_bidimensional1 > *{
+    border: 2px solid black;
+    padding: 10px;
+}
+
+#llista_bidimensional2{
+    display: flex;
+}
+#llista_bidimensional2 > *{
+    border: 2px solid black;
+    padding: 10px;
+}
