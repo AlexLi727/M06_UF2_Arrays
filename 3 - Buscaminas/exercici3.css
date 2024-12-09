@@ -1,0 +1,62 @@
+body{
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+}
+
+.casilla{
+    border: 2px solid black;
+    padding: 30px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.fila{
+    display: flex;
+}
+
+#juego > .fila > .casilla:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
+.n1{
+    color: blue;
+}
+
+.n2{
+    color: green;
+}
+
+.n3{
+    color: red;
+}
+
+.n4{
+    color: rgb(6, 6, 110);
+}
+
+.n5{
+    color: brown;
+}
+
+.n6{
+    color: aqua;
+}
+
+.n7{
+    color: purple;
+}
+
+.n8{
+    color: gray;
+}
+
+.n9{
+    color: black;
+}
